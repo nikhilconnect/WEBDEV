@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms and Input Tags</title>
+</head>
+
+<body>
+    <h2>This is HTML Forms Tutorial</h2>
+    <form action="backend.php">
+        <!-- <div>
+            Name :<input type="text" name="myName">
+        </div>
+        <br>
+        <div>
+            Roll :<input type="text" name="myRoll">
+        </div>
+        <br>
+        <div>
+            Email :<input type="email" name="myEmail">
+        </div>
+        <br>
+        <div>
+            Date :<input type="date" name="myDate">
+        </div>
+        <br>
+        <div>
+             Are you eligible? :<input type="checkbox" name="myEligibility"> 
+
+               if u want ki checkbox hamesha se checked rahe toh iske type below code 
+
+            Are you eligible? :<input type="checkbox" name="myEligibility" checked>
+        </div>
+        <br>
+        <div>
+            Gender: Male <input type="radio" name="myGender">
+            Female <input type="radio" name="myGender">
+            others <input type="radio" name="myGender">
+        </div>
+        <br>
+        <div>
+            Bonus : <input type="number" name="myBonus">
+        </div>
+        <br>
+        <div>
+            yahan par tum soch raha hoga ki <br> tag write about 
+            yourself main kyun likha kiunki agar br nhi likhte 
+            toh textarea web page ko ugly 
+            bana rha tha nahi wishwas hai toh hata ke dekh le 
+            write about yourself : <br> <textarea name="myText" 
+            cols="30" rows="10"></textarea>
+        </div> -->
+
+
+
+
+
+
+        <!-- now we will write the whole above code using Label
+             now what does label do label actually yeh 
+            karta hain ki jab hum kisi input
+             letter pe click karenge woh apne aap execute ho jayega -->
+
+        <label for="name">Name</label>
+        <div>
+            <input type="text" name="myName" id="name">
+        </div>
+        <br>
+        <label for="roll">Roll</label>
+        <div>
+            <input type="text" name="myRoll" id="roll">
+        </div>
+        <br>
+        <label for="email">Email</label>
+        <div>
+            <input type="email" name="myEmail" id="email">
+        </div>
+        <br>
+        <label for="date">Date</label>
+        <div>
+            <input type="date" name="myDate" id="date">
+        </div>
+        <br>
+        <label for="eligible">Are you eligible?</label>
+        <div>
+            <input type="checkbox" name="myEligibility" id="eligible">
+        </div>
+        <br>
+        <!-- <label for="gender">Gender</label> -->
+        <div>
+            Gender: Male <input type="radio" name="myGender">
+            Female <input type="radio" name="myGender">
+            others <input type="radio" name="myGender">
+            <!-- Male <input type="radio" name="myGender"id="gender">
+                Female <input type="radio" name="myGender"id="gender">
+                others <input type="radio" name="myGender" id="gender"> -->
+        </div>
+        <br>
+        <label for="bonus">Bonus</label>
+        <div>
+            <input type="number" name="myBonus" id="bonus">
+        </div>
+        <br>
+        <label for="write">write about yourself</label>
+        <div>
+            <!-- yahan par tum soch raha hoga ki <br> tag write
+                 about yourself main kyun likha kiunki agar br nhi 
+                 likhte toh textarea web page ko ugly bana rha tha nahi
+                  wishwas hai toh hata ke dekh le  -->
+            <br> <textarea name="myText" cols="30" rows="10" id="write"></textarea>
+        </div>
+        <br>
+        <div>
+            <!-- <label for="car">Car</label>
+        <select name="mycar" id="car">
+            <option value="ind">Indica</option>
+            <option value="swf">swift</option>
+            
+        </select> -->
+
+            <!-- agar main chahta hoo ki code jaise hi run ho koi 
+                selected pehle se hi selected ho to "selected" likh 
+                denge dekh koi fyada nahi hain iss feature-->
+            <label for="car">Car</label>
+            <select name="mycar" id="car">
+                <option value="ind" selected>Indica</option>
+                <option value="swf">swift</option>
+
+            </select>
+        </div>
+
+    </form>
+</body>
+
+</html>
